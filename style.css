@@ -67,7 +67,7 @@ textarea {
   }
 } */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 280px) and (max-width: 1200px) {
   .calculator {
     display: grid;
     width: 80%;
@@ -82,12 +82,12 @@ textarea {
     margin: 20px;
   }
   button {
-    width: 40px;
+    width: 60px;
     height: 40px;
   }
   .controls {
     display: grid;
-    grid-template-columns: repeat(5, 0.5fr);
+    grid-template-columns: repeat(4, 0.5fr);
     grid-gap: 1px;
     height: 350px;
   }
@@ -136,4 +136,13 @@ textarea {
     width: 40px;
     height: 40px;
   }
+}
+
+/* FOR BIG SCREENS */
+@media (width: 1200px) {
+  .calculator {
+     display: grid;
+
+    width: 40%;
+    height: 55%;
 }
