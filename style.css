@@ -25,11 +25,12 @@ body {
 }
 
 button {
-  width: 120px;
-  height: 70px;
+  width: 100px;
+  height: 50px;
   cursor: pointer;
   /* background-color: #fff; */
   margin-top: 0px;
+  background-color: white;
 }
 .clear_red {
   background-color: red;
@@ -50,7 +51,7 @@ textarea {
   resize: none;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .calculator {
     display: grid;
     width: 50%;
@@ -64,20 +65,75 @@ textarea {
     width: 100px;
     height: 40px;
   }
-}
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 375px) {
   .calculator {
     display: grid;
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    right: 20%;
   }
   textarea {
-    width: 80%;
+    width: 50%;
     margin: 20px;
   }
   button {
-    width: 75px;
+    width: 40px;
+    height: 40px;
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-gap: 1px;
+    height: 350px;
+  }
+  textarea {
+    width: 80%;
+  }
+}
+@media screen and (width: 820px) {
+  .calculator {
+    display: grid;
+
+    width: 40%;
+    height: 55%;
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-gap: 1px;
+  }
+  textarea {
+    width: 50%;
+    margin: 20px;
+  }
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (width: 768px) {
+  .calculator {
+    display: grid;
+
+    width: 40%;
+    height: 55%;
+  }
+  .controls {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    grid-gap: 1px;
+  }
+  textarea {
+    width: 50%;
+    margin: 20px;
+  }
+  button {
+    width: 40px;
     height: 40px;
   }
 }
