@@ -1,0 +1,83 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.calculator {
+  display: grid;
+  justify-content: center;
+
+  text-align: center;
+  grid-gap: 10px;
+  /* margin: 400px; */
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  right: 20%;
+  border-radius: 27px;
+  background: #c9b6b6;
+  box-shadow: inset 8px 2px 5px #695f5f, inset -8px -8px 5px #ffffff;
+  padding: 0px;
+  width: 30%;
+  height: 650px;
+}
+/* controls of the calculator */
+.controls {
+}
+
+button {
+  width: 120px;
+  height: 70px;
+  cursor: pointer;
+  /* background-color: #fff; */
+  margin-top: 0px;
+}
+.clear_red {
+  background-color: red;
+}
+button:hover {
+  background-color: blue;
+}
+/* first row of data */
+.first_row {
+  margin: 0px;
+}
+
+/* textarea */
+textarea {
+  width: 80%;
+  height: 50px;
+  margin: 40px 40px;
+  resize: none;
+}
+
+@media screen and (max-width: 800px) {
+  .calculator {
+    display: grid;
+    width: 50%;
+    height: 80%;
+  }
+  textarea {
+    width: 80%;
+    margin: 20px;
+  }
+  button {
+    width: 100px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    display: grid;
+    width: 60%;
+    height: 80%;
+  }
+  textarea {
+    width: 80%;
+    margin: 20px;
+  }
+  button {
+    width: 75px;
+    height: 40px;
+  }
+}

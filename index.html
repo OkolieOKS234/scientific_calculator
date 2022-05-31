@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="calculator">
+      <div>
+        <textarea name="" id="screener" cols="30" rows="5"> </textarea>
+      </div>
+
+      <div class="controls">
+        <button onclick="symbols('%')" class="percentage">%</button>
+        <button class="clear_text" onclick="clearScreen()">CE</button>
+        <button class="clear_red">C</button>
+        <button>(X)</button>
+
+        <button onclick="numbers('1')" value="1">1/x</button>
+        <button onclick="numbers('')" value="()^2">x*2</button>
+        <button onclick="numbers('sqr()')">2√</button>
+        <button>/</button>
+
+        <button onclick="symbols('*')">X</button>
+        <button onclick="numbers('7')">7</button>
+        <button onclick="numbers('8')">8</button>
+        <button onclick="numbers('9')">9</button>
+
+        <button onclick="numbers('4')">4</button>
+        <button onclick="numbers('5')">5</button>
+        <button onclick="numbers('6')">6</button>
+        <button onclick="symbols('-')" value="-">-</button>
+        <button onclick="symbols('+')" value="+">+</button>
+
+        <button onclick="calculation()">=</button>
+      </div>
+      <script src="./script.js"></script>
+    </section>
+  </body>
+</html>
