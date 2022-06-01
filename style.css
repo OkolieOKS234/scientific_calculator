@@ -71,13 +71,15 @@ textarea {
 
 @media screen and (min-width: 280px) and (max-width: 1200px) {
   .calculator {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+   text-align: center;
+
     width: 80%;
     height: 70%;
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    right: 20%;
+   
   }
   textarea {
     width: 50%;
@@ -92,6 +94,11 @@ textarea {
     grid-template-columns: repeat(4, 0.5fr);
     grid-gap: 1px;
     height: 350px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    left: 10%;
   }
   textarea {
     width: 80%;
@@ -124,6 +131,7 @@ textarea {
 
     width: 40%;
     height: 55%;
+  
   }
   .controls {
     display: grid;
