@@ -14,9 +14,8 @@ body {
   left: 20%;
   right: 20%;
   border-radius: 27px;
-background: #1d1b1b;
-box-shadow:  20px 20px 36px #191717,
-             -20px -20px 36px #211f1f;
+  background: #1d1b1b;
+  box-shadow: 20px 20px 36px #191717, -20px -20px 36px #211f1f;
   padding: 0px;
   width: 30%;
   height: 650px;
@@ -75,11 +74,10 @@ textarea {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-   text-align: center;
+    text-align: center;
 
     width: 80%;
     height: 80%;
-   
   }
   textarea {
     width: 50%;
@@ -93,8 +91,8 @@ textarea {
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);
     grid-gap: 1px;
-    height: 350px;
-    width: 100px;
+    height: 60%;
+    width: 80%;
     align-items: center;
     text-align: center;
     position: relative;
@@ -104,11 +102,11 @@ textarea {
     width: 80%;
   }
 }
-@media screen and (width: 820px) {
+/* @media screen and (width: 820px) {
   .calculator {
     display: grid;
-
-    width: 40%;
+    width: 80%;
+    height: 80%;
     height: 55%;
   }
   .controls {
@@ -131,7 +129,8 @@ textarea {
 
     width: 40%;
     height: 55%;
-  
+    width: 80%;
+    height: 80%;
   }
   .controls {
     display: grid;
@@ -146,13 +145,14 @@ textarea {
     width: 40px;
     height: 40px;
   }
-}
+} */
 
 /* FOR BIG SCREENS */
-@media (width: 1200px) {
+/* @media (width: 1200px) {
   .calculator {
-     display: grid;
+    display: grid;
 
     width: 40%;
     height: 55%;
-}
+  }
+} */
