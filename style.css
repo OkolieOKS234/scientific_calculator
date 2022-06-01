@@ -13,7 +13,7 @@ body {
   top: 20%;
   left: 20%;
   right: 20%;
-  border-radius: 50px;
+  border-radius: 27px;
 background: #1d1b1b;
 box-shadow:  20px 20px 36px #191717,
              -20px -20px 36px #211f1f;
@@ -78,7 +78,7 @@ textarea {
    text-align: center;
 
     width: 80%;
-    height: 70%;
+    height: 80%;
    
   }
   textarea {
